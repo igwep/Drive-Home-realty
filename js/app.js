@@ -44,6 +44,7 @@ document.addEventListener('DOMContentLoaded', ()=>{
     const carosel = document.querySelector('.carosel');
     let scrollAmount = 0;
     const itemWidth = document.querySelector('.carousel-item').offsetWidth;
+    console.log(itemWidth);
     
     setInterval(() => {
       scrollAmount += itemWidth;
@@ -63,7 +64,7 @@ document.addEventListener('DOMContentLoaded', ()=>{
       utilsScript:
         "https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/utils.js",
     });
-    const btn = document.querySelector('.btn');
+   /*  const btn = document.querySelector('.btn');
     btn.addEventListener('click', ()=>{
         console.log(phoneInput);
-    })
+    }) */

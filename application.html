@@ -77,13 +77,14 @@
           <p>We will not be held accountable for any additional charge by Agents/Landlords in the course of this transaction</p>
 
          </div>
-          <form>
+          <form class="forms">
             <div>
               <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
                 <div class="flex flex-col ">
                 <div>
                 <label for="first-name" class="block text-sm font-medium text-gray-700">First Name</label>
                 <input type="text" id="first-name" name="first-name" class="mt-1 p-2 block w-full border border-gray-300 rounded-md shadow-sm">
+                <div><p class="text-red-700 text-sm">Please input First Name</p></div>
                 </div>
                 </div>
                 <div class="flex flex-col ">
@@ -180,7 +181,7 @@
             </div>
           
           <div class="mt-6">
-            <button type="submit" class="w-full bg-blue-500 text-white p-2 rounded-md shadow-md hover:bg-blue-600">Submit</button>
+            <button type="submit" class="w-full bg-blue-500 text-white p-2 rounded-md shadow-md hover:bg-blue-600 submit-btn">Submit</button>
           </div>
 
 
@@ -240,6 +241,9 @@
         </div>
     </footer>
 </body>
+<script src="https://smtpjs.com/v3/smtp.js">
+</script>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 <script src="https://cdn.jsdelivr.net/npm/intl-tel-input@23.5.0/build/js/intlTelInput.min.js"></script>
 <script type="module" src="/js/application.js">
    
