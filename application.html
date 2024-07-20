@@ -8,12 +8,17 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/intl-tel-input@23.5.0/build/css/intlTelInput.css">
 </head>
 <style>
-    .iti {
-  --iti-path-flags-1x: url('path/to/flags.webp');
-  --iti-path-flags-2x: url('path/to/flags@2x.webp');
-  --iti-path-globe-1x: url('path/to/globe.webp');
-  --iti-path-globe-2x: url('path/to/globe@2x.webp');
-}
+  .phone-input-container {
+      position: relative;
+      width: 100%;
+    }
+    .phone-input-container input {
+      width: 100%;
+      padding-left: 60px; /* Adjust this padding based on the flag width */
+    }
+    .phone-input-container .iti {
+      width: 100%;
+    }
 </style>
 <body>
     <div>
@@ -32,7 +37,7 @@
                      <div ><!-- ul -->
                          <ul class="flex gap-5">
                              <li><a href="/index.html">Home</a></li>
-                         <li><a href="">About Us</a></li>
+                         <li><a href="/about.html">About Us</a></li>
                          <li><a href="/application.html">Application</a></li>
                          <li><a href="">New Heights Agents</a></li>
                          </ul>
@@ -54,91 +59,139 @@
              <div class="w-full bg-black absolute left-0 md:top-20 top-16 text-white overflow-hidden  flex flex-col font-semibold  transition-all duration-300 mobile-link-container h-0 p-2"><!-- mobile links -->
               
                     <a href="/index.html" class="p-2 hover:bg-gray-800 rounded-md w-full">Home</a>
-                    <a href="/index.html" class="p-2 hover:bg-gray-800 rounded-md w-full">About US</a>
+                    <a href="/about.html" class="p-2 hover:bg-gray-800 rounded-md w-full">About US</a>
                     <a href="/application.html" class="p-2 hover:bg-gray-800 rounded-md w-full">Application</a>
                     <a href="/index.html" class="p-2 hover:bg-gray-800 rounded-md w-full">New Heights Agents</a>
                     
                 
              </div>
         </header>
-    </div>
+    
     <section class="h-auto w-full">
-        <div class="bg-white p-8 rounded-lg shadow-lg w-full">
-            <h1 class="text-2xl font-bold mb-6">Application Form</h1>
-            <form>
+          <div class="bg-white p-8 rounded-lg shadow-lg w-full flex flex-col items-center">
+          <h1 class="text-4xl font-semibold mb-6">Application Form</h1>
+         <div class="md:w-[70%] text-center text-sm md:text-base text-gray-400 mb-6">
+          <p>N/B There’s a compulsory refundable application fee of $200 which covers for tour expenses and it’s completely refundable whether you secure the apartment or not. Do not believe any agent/realtor who states otherwise. </p>
+         </div>
+         <div class="md:w-[70%] text-center text-sm md:text-base text-gray-400 mb-6">
+          <p>We will not be held accountable for any additional charge by Agents/Landlords in the course of this transaction</p>
+
+         </div>
+          <form>
+            <div>
               <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
                 <div class="flex flex-col ">
-                  <label for="first-name" class="block text-sm font-medium text-gray-700">First Name</label>
-                  <input type="text" id="first-name" name="first-name" class="mt-1 p-2 block w-full border border-gray-300 rounded-md shadow-sm">
-                </div>
                 <div>
-                  <label for="last-name" class="block text-sm font-medium text-gray-700">Last Name</label>
-                  <input type="text" id="last-name" name="last-name" class="mt-1 p-2 block w-full border border-gray-300 rounded-md shadow-sm">
+                <label for="first-name" class="block text-sm font-medium text-gray-700">First Name</label>
+                <input type="text" id="first-name" name="first-name" class="mt-1 p-2 block w-full border border-gray-300 rounded-md shadow-sm">
                 </div>
+                </div>
+                <div class="flex flex-col ">
                 <div>
-                  <label for="dob" class="block text-sm font-medium text-gray-700">Date of Birth</label>
-                  <input type="date" id="dob" name="dob" class="mt-1 p-2 block w-full border border-gray-300 rounded-md shadow-sm">
+                <label for="last-name" class="block text-sm font-medium text-gray-700">Last Name</label>
+                <input type="text" id="last-name" name="last-name" class="mt-1 p-2 block w-full border border-gray-300 rounded-md shadow-sm">
                 </div>
+                </div>
+                <div class="flex flex-col ">
                 <div>
-                  <label for="current-address" class="block text-sm font-medium text-gray-700">Current Address</label>
-                  <input type="text" id="current-address" name="current-address" class="mt-1 p-2 block w-full border border-gray-300 rounded-md shadow-sm">
+                <label for="dob" class="block text-sm font-medium text-gray-700">Date of Birth</label>
+                <input type="date" id="dob" name="dob" class="mt-1 p-2 block w-full border border-gray-300 rounded-md shadow-sm">
                 </div>
+                </div>
+                <div class="flex flex-col ">
                 <div>
-                  <label for="city" class="block text-sm font-medium text-gray-700">City</label>
-                  <input type="text" id="city" name="city" class="mt-1 p-2 block w-full border border-gray-300 rounded-md shadow-sm">
+                <label for="current-address" class="block text-sm font-medium text-gray-700">Current Address</label>
+                <input type="text" id="current-address" name="current-address" class="mt-1 p-2 block w-full border border-gray-300 rounded-md shadow-sm">                     </div>
                 </div>
+                <div class="flex flex-col ">
                 <div>
-                  <label for="state" class="block text-sm font-medium text-gray-700">State</label>
-                  <input type="text" id="state" name="state" class="mt-1 p-2 block w-full border border-gray-300 rounded-md shadow-sm">
+                <label for="city" class="block text-sm font-medium text-gray-700">City</label>
+                <input type="text" id="city" name="city" class="mt-1 p-2 block w-full border border-gray-300 rounded-md shadow-sm">
                 </div>
+                </div>
+                <div class="flex flex-col ">
                 <div>
-                  <label for="zip-code" class="block text-sm font-medium text-gray-700">Zip Code</label>
-                  <input type="text" id="zip-code" name="zip-code" class="mt-1 p-2 block w-full border border-gray-300 rounded-md shadow-sm">
+                <label for="state" class="block text-sm font-medium text-gray-700">State</label>
+                <input type="text" id="state" name="state" class="mt-1 p-2 block w-full border border-gray-300 rounded-md shadow-sm">
                 </div>
+                </div>
+                <div class="flex flex-col ">
                 <div>
-                  <label for="country" class="block text-sm font-medium text-gray-700">Country</label>
-                  <input type="text" id="country" name="country" class="mt-1 p-2 block w-full border border-gray-300 rounded-md shadow-sm">
+                <label for="zip-code" class="block text-sm font-medium text-gray-700">Zip Code</label>
+                <input type="text" id="zip-code" name="zip-code" class="mt-1 p-2 block w-full border border-gray-300 rounded-md shadow-sm">
                 </div>
+                </div>
+                <div class="flex flex-col ">
                 <div>
-                  <label for="social-security" class="block text-sm font-medium text-gray-700">Social Security (optional)</label>
-                  <input type="text" id="social-security" name="social-security" class="mt-1 p-2 block w-full border border-gray-300 rounded-md shadow-sm">
+                <label for="country" class="block text-sm font-medium text-gray-700">Country</label>
+                <input type="text" id="country" name="country" class="mt-1 p-2 block w-full border border-gray-300 rounded-md shadow-sm">
                 </div>
+                </div>
+                <div class="flex flex-col ">
                 <div>
-                  <label for="mobile_code" class="block text-sm font-medium text-gray-700">Cell Number</label>
-                  <input type="text" id="mobile_code" class="mt-1 p-2 block w-full border border-gray-300 rounded-md shadow-sm phone" placeholder="Phone number" name="mobile_code">
+                <label for="social-security" class="block text-sm font-medium text-gray-700">Social Security (optional)</label>
+                <input type="text" id="social-security" name="social-security" class="mt-1 p-2 block w-full border border-gray-300 rounded-md shadow-sm">
                 </div>
+                </div>
+                <div class="flex flex-col ">
+                <div class="phone-input-container">
+                <label for="phone" class="block text-sm font-medium text-gray-700">Cell Number</label>
+                <input id="phone" type="tel" name="phone" class="mt-1 p-2 block  w-full border border-gray-300 rounded-md shadow-sm" >
+                </div>
+                </div>
+                <div class="flex flex-col ">
                 <div>
-                  <label for="email" class="block text-sm font-medium text-gray-700">Email Address</label>
-                  <input type="email" id="email" name="email" class="mt-1 p-2 block w-full border border-gray-300 rounded-md shadow-sm">
+                <label for="email" class="block text-sm font-medium text-gray-700">Email Address</label>
+                <input type="email" id="email" name="email" class="mt-1 p-2 block w-full border border-gray-300 rounded-md shadow-sm">
                 </div>
+                </div>
+                <div class="flex flex-col ">
                 <div>
-                  <label for="agent-name" class="block text-sm font-medium text-gray-700">Agent's Name</label>
-                  <input type="text" id="agent-name" name="agent-name" class="mt-1 p-2 block w-full border border-gray-300 rounded-md shadow-sm">
+                <label for="agent-name" class="block text-sm font-medium text-gray-700">Agent's Name</label>
+                <input type="text" id="agent-name" name="agent-name" class="mt-1 p-2 block w-full border border-gray-300 rounded-md shadow-sm">
                 </div>
+                </div>
+                <div class="flex flex-col ">
                 <div>
-                  <label for="landlord-name" class="block text-sm font-medium text-gray-700">Former Landlord's Name (optional)</label>
-                  <input type="text" id="landlord-name" name="landlord-name" class="mt-1 p-2 block w-full border border-gray-300 rounded-md shadow-sm">
+                <label for="landlord-name" class="block text-sm font-medium text-gray-700">Former Landlord's Name (optional)</label>
+                <input type="text" id="landlord-name" name="landlord-name" class="mt-1 p-2 block w-full border border-gray-300 rounded-md shadow-sm">
                 </div>
-                <div class="col-span-2">
-                  <label for="occupants" class="block text-sm font-medium text-gray-700">Names Of Other Persons To Occupy The Apartment (state relationship with the persons)</label>
-                  <textarea id="occupants" name="occupants" rows="3" class="mt-1 p-2 block w-full border border-gray-300 rounded-md shadow-sm"></textarea>
                 </div>
+                <div class="flex flex-col ">
+                <div>
+                    <label for="occupants" class="block text-sm font-medium text-gray-700">Names Of Other Persons To Occupy The Apartment (state relationship with the persons)</label>
+                    <textarea id="occupants" name="occupants" rows="3" class="mt-1 p-2 block w-full border border-gray-300 rounded-md shadow-sm"></textarea>
+                
+                </div>
+                </div>
+                <div class="flex flex-col ">
                 <div>
                   <label for="emergency-contact" class="block text-sm font-medium text-gray-700">Emergency Contact</label>
-                  <input type="text" id="emergency-contact" name="emergency-contact" class="mt-1 p-2 block w-full border border-gray-300 rounded-md shadow-sm">
+                        <input type="text" id="emergency-contact" name="emergency-contact" class="mt-1 p-2 block w-full border border-gray-300 rounded-md shadow-sm">
+                
                 </div>
+                </div>
+                <div class="flex flex-col ">
                 <div>
                   <label for="payment-method" class="block text-sm font-medium text-gray-700">Payment Method</label>
                   <input type="text" id="payment-method" name="payment-method" class="mt-1 p-2 block w-full border border-gray-300 rounded-md shadow-sm">
                 </div>
+                </div>
+            </div>
+          
+          <div class="mt-6">
+            <button type="submit" class="w-full bg-blue-500 text-white p-2 rounded-md shadow-md hover:bg-blue-600">Submit</button>
+          </div>
+
+
               </div>
-              <div class="mt-6">
-                <button type="submit" class="w-full bg-blue-500 text-white p-2 rounded-md shadow-md hover:bg-blue-600">Submit</button>
-              </div>
+              
             </form>
+            </div>
           </div>
 
     </section>
+  </div>
     <footer class="h-auto  pt-10 pb-4 bg-black text-white flex flex-col w-full justify-center items-center">
         <div class=" w-[90%]   flex md:flex-row flex-col md:gap-10 mb-20 gap-8   items-start "><!-- conatiner -->
            <div class="md:w-[30%] flex-col">
@@ -184,16 +237,11 @@
         </div>
         <div class="w-full flex justify-center">
             <p>All Rights Reserved | New Heights Realty Group 2024</p>
-
         </div>
-        
-
     </footer>
-    
-    
 </body>
 <script src="https://cdn.jsdelivr.net/npm/intl-tel-input@23.5.0/build/js/intlTelInput.min.js"></script>
-<script src="/js/app.js">
+<script type="module" src="/js/application.js">
    
 </script>
 </html>
