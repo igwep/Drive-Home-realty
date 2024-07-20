@@ -743,6 +743,14 @@ video {
   height: 60vh;
 }
 
+.h-\[60\%\] {
+  height: 60%;
+}
+
+.h-\[80\%\] {
+  height: 80%;
+}
+
 .w-20 {
   width: 5rem;
 }
@@ -789,6 +797,10 @@ video {
 
 .w-\[100vh\] {
   width: 100vh;
+}
+
+.w-\[50\%\] {
+  width: 50%;
 }
 
 .flex-shrink-0 {
@@ -871,6 +883,10 @@ video {
   gap: 2rem;
 }
 
+.gap-7 {
+  gap: 1.75rem;
+}
+
 .overflow-hidden {
   overflow: hidden;
 }
@@ -949,6 +965,10 @@ video {
 
 .p-8 {
   padding: 2rem;
+}
+
+.p-12 {
+  padding: 3rem;
 }
 
 .px-10 {
@@ -1221,6 +1241,10 @@ video {
 
   .md\:w-full {
     width: 100%;
+  }
+
+  .md\:w-\[50\%\] {
+    width: 50%;
   }
 
   .md\:grid-cols-2 {
