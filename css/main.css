@@ -682,6 +682,10 @@ video {
   display: block;
 }
 
+.inline-block {
+  display: inline-block;
+}
+
 .flex {
   display: flex;
 }
@@ -749,6 +753,10 @@ video {
 
 .h-\[80\%\] {
   height: 80%;
+}
+
+.h-\[40vh\] {
+  height: 40vh;
 }
 
 .w-20 {
@@ -1069,6 +1077,10 @@ video {
   font-weight: 600;
 }
 
+.font-normal {
+  font-weight: 400;
+}
+
 .text-black {
   --tw-text-opacity: 1;
   color: rgb(0 0 0 / var(--tw-text-opacity));
@@ -1255,6 +1267,10 @@ video {
 
   .md\:w-\[50\%\] {
     width: 50%;
+  }
+
+  .md\:w-\[7\%\] {
+    width: 7%;
   }
 
   .md\:grid-cols-2 {
