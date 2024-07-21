@@ -84,8 +84,28 @@ const sendEmail = ()=>{
       }
     );
 };
+const phoneInputField = document.querySelector("#phone");
+const phoneInput = window.intlTelInput(phoneInputField, {
+  utilsScript:
+    "https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/utils.js",
+});
+
+const checkInput = ()=>{
+    const items = document.querySelectorAll('.item');
+for (const item of items){
+    if(item.value == ""){
+        const errorMes = item.parentElement.querySelector('.error-message');
+        console.log(errorMes)
+        if(errorMes){
+            errorMes.classList.remove('hidden')
+        }
+    }
+
+}
+}
 submit.addEventListener("click", (e)=>{
     e.preventDefault();
-    sendEmail();
+    checkInput();
+   // sendEmail();
     
 })

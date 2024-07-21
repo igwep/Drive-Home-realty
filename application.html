@@ -79,169 +79,183 @@
           <p>We will not be held accountable for any additional charge by Agents/Landlords in the course of this transaction</p>
 
          </div>
-          <form class="forms">
-            <div>
-              <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-                <div class="flex flex-col ">
-                <div>
-                <label for="first-name" class="block text-sm font-medium text-gray-700">First Name</label>
-                <input type="text" id="first-name" name="first-name" class="mt-1 p-2 block w-full border border-gray-300 rounded-md shadow-sm">
-                <div><p class="text-red-700 text-sm">Please input First Name</p></div>
-                </div>
-                </div>
-                <div class="flex flex-col ">
-                <div>
-                <label for="last-name" class="block text-sm font-medium text-gray-700">Last Name</label>
-                <input type="text" id="last-name" name="last-name" class="mt-1 p-2 block w-full border border-gray-300 rounded-md shadow-sm">
-                </div>
-                </div>
-                <div class="flex flex-col ">
-                <div>
-                <label for="dob" class="block text-sm font-medium text-gray-700">Date of Birth</label>
-                <input type="date" id="dob" name="dob" class="mt-1 p-2 block w-full border border-gray-300 rounded-md shadow-sm">
-                </div>
-                </div>
-                <div class="flex flex-col ">
-                <div>
-                <label for="current-address" class="block text-sm font-medium text-gray-700">Current Address</label>
-                <input type="text" id="current-address" name="current-address" class="mt-1 p-2 block w-full border border-gray-300 rounded-md shadow-sm">                     </div>
-                </div>
-                <div class="flex flex-col ">
-                <div>
-                <label for="city" class="block text-sm font-medium text-gray-700">City</label>
-                <input type="text" id="city" name="city" class="mt-1 p-2 block w-full border border-gray-300 rounded-md shadow-sm">
-                </div>
-                </div>
-                <div class="flex flex-col ">
-                <div>
-                <label for="state" class="block text-sm font-medium text-gray-700">State</label>
-                <input type="text" id="state" name="state" class="mt-1 p-2 block w-full border border-gray-300 rounded-md shadow-sm">
-                </div>
-                </div>
-                <div class="flex flex-col ">
-                <div>
-                <label for="zip-code" class="block text-sm font-medium text-gray-700">Zip Code</label>
-                <input type="text" id="zip-code" name="zip-code" class="mt-1 p-2 block w-full border border-gray-300 rounded-md shadow-sm">
-                </div>
-                </div>
-                <div class="flex flex-col ">
-                <div>
-                <label for="country" class="block text-sm font-medium text-gray-700">Country</label>
-                <input type="text" id="country" name="country" class="mt-1 p-2 block w-full border border-gray-300 rounded-md shadow-sm">
-                </div>
-                </div>
-                <div class="flex flex-col ">
-                <div>
-                <label for="social-security" class="block text-sm font-medium text-gray-700">Social Security (optional)</label>
-                <input type="text" id="social-security" name="social-security" class="mt-1 p-2 block w-full border border-gray-300 rounded-md shadow-sm">
-                </div>
-                </div>
-                <div class="flex flex-col ">
-                <div class="phone-input-container">
-                <label for="phone" class="block text-sm font-medium text-gray-700">Cell Number</label>
-                <input id="phone" type="tel" name="phone" class="mt-1 p-2 block  w-full border border-gray-300 rounded-md shadow-sm" >
-                </div>
-                </div>
-                <div class="flex flex-col ">
-                <div>
-                <label for="email" class="block text-sm font-medium text-gray-700">Email Address</label>
-                <input type="email" id="email" name="email" class="mt-1 p-2 block w-full border border-gray-300 rounded-md shadow-sm">
-                </div>
-                </div>
-                <div class="flex flex-col ">
-                <div>
-                <label for="agent-name" class="block text-sm font-medium text-gray-700">Agent's Name</label>
-                <input type="text" id="agent-name" name="agent-name" class="mt-1 p-2 block w-full border border-gray-300 rounded-md shadow-sm">
-                </div>
-                </div>
-                <div class="flex flex-col ">
-                <div>
-                <label for="landlord-name" class="block text-sm font-medium text-gray-700">Former Landlord's Name (optional)</label>
-                <input type="text" id="landlord-name" name="landlord-name" class="mt-1 p-2 block w-full border border-gray-300 rounded-md shadow-sm">
-                </div>
-                </div>
-                <div class="flex flex-col ">
-                <div>
-                    <label for="occupants" class="block text-sm font-medium text-gray-700">Names Of Other Persons To Occupy The Apartment (state relationship with the persons)</label>
-                    <textarea id="occupants" name="occupants" rows="3" class="mt-1 p-2 block w-full border border-gray-300 rounded-md shadow-sm"></textarea>
-                
-                </div>
-                </div>
-                <div class="flex flex-col ">
-                <div>
-                  <label for="emergency-contact" class="block text-sm font-medium text-gray-700">Emergency Contact</label>
-                        <input type="text" id="emergency-contact" name="emergency-contact" class="mt-1 p-2 block w-full border border-gray-300 rounded-md shadow-sm">
-                
-                </div>
-                </div>
-                <div class="flex flex-col ">
-                <div>
-                  <label for="payment-method" class="block text-sm font-medium text-gray-700">Payment Method</label>
-                  <input type="text" id="payment-method" name="payment-method" class="mt-1 p-2 block w-full border border-gray-300 rounded-md shadow-sm">
-                </div>
-                </div>
-            </div>
-          
-          <div class="mt-6">
-            <button type="submit" class="w-full bg-blue-500 text-white p-2 rounded-md shadow-md hover:bg-blue-600 submit-btn">Submit</button>
-          </div>
+<form class="forms">
+<div>
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+    <div class="flex flex-col ">
+    <div>
+    <label for="first-name" class="block text-sm font-medium text-gray-700">First Name</label>
+    <input type="text" id="first-name" name="first-name" class="mt-1 p-2 block w-full border border-gray-300 rounded-md shadow-sm item">
+    <div><p class="text-red-600 text-sm error-message hidden">Please input First Name</p></div>
+    </div>
+    </div>
+    <div class="flex flex-col ">
+    <div>
+    <label for="last-name" class="block text-sm font-medium text-gray-700">Last Name</label>
+    <input type="text" id="last-name" name="last-name" class="mt-1 p-2 block w-full border border-gray-300 rounded-md shadow-sm item">
+    <div><p class="text-red-600 text-sm error-message hidden">Please input Last Name</p></div>
+    </div>
+    </div>
+    <div class="flex flex-col ">
+    <div>
+    <label for="dob" class="block text-sm font-medium text-gray-700">Date of Birth</label>
+    <input type="date" id="dob" name="dob" class="mt-1 p-2 block w-full border border-gray-300 rounded-md shadow-sm item">
+    <div><p class="text-red-600 text-sm error-message hidden">Please input Date of Birth</p></div>
+    </div>
+    </div>
+    <div class="flex flex-col ">
+    <div>
+    <label for="current-address" class="block text-sm font-medium text-gray-700">Current Address</label>
+    <input type="text" id="current-address" name="current-address" class="mt-1 p-2 block w-full border border-gray-300 rounded-md shadow-sm item">
+    <div><p class="text-red-600 text-sm error-message hidden">Please input Current Address</p></div>                     </div>
+    </div>
+    <div class="flex flex-col ">
+    <div>
+    <label for="city" class="block text-sm font-medium text-gray-700">City</label>
+    <input type="text" id="city" name="city" class="mt-1 p-2 block w-full border border-gray-300 rounded-md shadow-sm item">
+    <div><p class="text-red-600 text-sm error-message hidden">Please input City</p></div>
+    </div>
+    </div>
+    <div class="flex flex-col ">
+    <div>
+    <label for="state" class="block text-sm font-medium text-gray-700">State</label>
+    <input type="text" id="state" name="state" class="mt-1 p-2 block w-full border border-gray-300 rounded-md shadow-sm item">
+    <div><p class="text-red-600 text-sm error-message hidden">Please input State</p></div>
+    </div>
+    </div>
+    <div class="flex flex-col ">
+    <div>
+    <label for="zip-code" class="block text-sm font-medium text-gray-700">Zip Code</label>
+    <input type="text" id="zip-code" name="zip-code" class="mt-1 p-2 block w-full border border-gray-300 rounded-md shadow-sm item">
+    <div><p class="text-red-600 text-sm error-message hidden">Please input Zip code</p></div>
+    </div>
+    </div>
+    <div class="flex flex-col ">
+    <div>
+    <label for="country" class="block text-sm font-medium text-gray-700">Country</label>
+    <input type="text" id="country" name="country" class="mt-1 p-2 block w-full border border-gray-300 rounded-md shadow-sm item">
+    <div><p class="text-red-600 text-sm error-message hidden">Please input Country</p></div>
+    </div>
+    </div>
+    <div class="flex flex-col ">
+    <div>
+    <label for="social-security" class="block text-sm font-medium text-gray-700">Social Security (optional)</label>
+    <input type="text" id="social-security" name="social-security" class="mt-1 p-2 block w-full border border-gray-300 rounded-md shadow-sm">
+    
+    </div>
+    </div>
+    <div class="flex flex-col ">
+    <div class="phone-input-container">
+    <label for="phone" class="block text-sm font-medium text-gray-700">Cell Number</label>
+    <input id="phone" type="tel" name="phone" class="mt-1 p-2 block  w-full border border-gray-300 rounded-md shadow-sm item" >
+    <div><p class="text-red-600 text-sm error-message hidden">Please input Cell Number</p></div>
+    </div>
+    </div>
+    <div class="flex flex-col ">
+    <div>
+    <label for="email" class="block text-sm font-medium text-gray-700">Email Address</label>
+    <input type="email" id="email" name="email" class="mt-1 p-2 block w-full border border-gray-300 rounded-md shadow-sm item">
+    <div><p class="text-red-600 text-sm error-message hidden">Please input Email Address</p></div>
+    </div>
+    </div>
+    <div class="flex flex-col ">
+    <div>
+    <label for="agent-name" class="block text-sm font-medium text-gray-700">Agent's Name</label>
+    <input type="text" id="agent-name" name="agent-name" class="mt-1 p-2 block w-full border border-gray-300 rounded-md shadow-sm item">
+    <div><p class="text-red-600 text-sm error-message hidden">Please input Agent's Name</p></div>
+    </div>
+    </div>
+    <div class="flex flex-col ">
+    <div>
+    <label for="landlord-name" class="block text-sm font-medium text-gray-700">Former Landlord's Name (optional)</label>
+    <input type="text" id="landlord-name" name="landlord-name" class="mt-1 p-2 block w-full border border-gray-300 rounded-md shadow-sm ">
+    </div>
+    </div>
+    <div class="flex flex-col ">
+    <div>
+        <label for="occupants" class="block text-sm font-medium text-gray-700">Names Of Other Persons To Occupy The Apartment (state relationship with the persons)</label>
+        <textarea id="occupants" name="occupants" rows="3" class="mt-1 p-2 block w-full border border-gray-300 rounded-md shadow-sm item"></textarea>
+        <div><p class="text-red-600 text-sm error-message hidden">Please input  Name</p></div>
+    
+    </div>
+    </div>
+    <div class="flex flex-col ">
+    <div>
+        <label for="emergency-contact" class="block text-sm font-medium text-gray-700">Emergency Contact</label>
+            <input type="text" id="emergency-contact" name="emergency-contact" class="mt-1 p-2 block w-full border border-gray-300 rounded-md shadow-sm item">
+            <div><p class="text-red-600 text-sm error-message hidden">Please input Emergency Contact</p></div>
+    
+    </div>
+    </div>
+    <div class="flex flex-col ">
+    <div>
+        <label for="payment-method" class="block text-sm font-medium text-gray-700">Payment Method</label>
+        <input type="text" id="payment-method" name="payment-method" class="mt-1 p-2 block w-full border border-gray-300 rounded-md shadow-sm item">
+        <div><p class="text-red-600 text-sm error-message hidden">Please input Payment Method</p></div>
+    </div>
+    </div>
+</div>
+
+<div class="mt-6">
+<button type="submit" class="w-full bg-blue-500 text-white p-2 rounded-md shadow-md hover:bg-blue-600 submit-btn">Submit</button>
+</div>
 
 
-              </div>
-              
-            </form>
+    </div>
+    
+</form>
             </div>
           </div>
 
     </section>
   </div>
-    <footer class="h-auto  pt-10 pb-4 bg-black text-white flex flex-col w-full justify-center items-center">
-        <div class=" w-[90%]   flex md:flex-row flex-col md:gap-10 mb-20 gap-8   items-start "><!-- conatiner -->
-           <div class="md:w-[30%] flex-col">
-            <div class="flex items-center ">
-                <div class="h-20 w-20 "><!-- logo -->
-                    <img src="/img/NW-removebg-preview (1).png" alt="" class="w-full h-full invert">
-                </div>
-                <div>
-                    <p class="font-semibold">NEW WAGE</p>
-                </div>
-               </div>
-            <div class="font-light w-full"><p>We’ve helped numerous individuals find their ideal Farm House. Now, we’re dedicated to providing even greater opportunities and insights. Whether you’re buying or selling, we’re here to support you every step of the way. </p></div>
-            <div class="flex gap-2 md:mt-12 mt-6">
-                <div class="md:w-[10%] w-[6%]"><a href=""><svg class="w-full h-full fill-current text-white" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"  viewBox="0 0 24 24">
-                    <path d="M 8 3 C 5.239 3 3 5.239 3 8 L 3 16 C 3 18.761 5.239 21 8 21 L 16 21 C 18.761 21 21 18.761 21 16 L 21 8 C 21 5.239 18.761 3 16 3 L 8 3 z M 18 5 C 18.552 5 19 5.448 19 6 C 19 6.552 18.552 7 18 7 C 17.448 7 17 6.552 17 6 C 17 5.448 17.448 5 18 5 z M 12 7 C 14.761 7 17 9.239 17 12 C 17 14.761 14.761 17 12 17 C 9.239 17 7 14.761 7 12 C 7 9.239 9.239 7 12 7 z M 12 9 A 3 3 0 0 0 9 12 A 3 3 0 0 0 12 15 A 3 3 0 0 0 15 12 A 3 3 0 0 0 12 9 z"></path>
-                </svg></a></div>
-                <div class="md:w-[10%] w-[6%]"><a href=""><svg class="w-full h-full fill-current text-white" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"  viewBox="0 0 24 24">
-                    <path d="M12,2C6.477,2,2,6.477,2,12c0,5.013,3.693,9.153,8.505,9.876V14.65H8.031v-2.629h2.474v-1.749 c0-2.896,1.411-4.167,3.818-4.167c1.153,0,1.762,0.085,2.051,0.124v2.294h-1.642c-1.022,0-1.379,0.969-1.379,2.061v1.437h2.995 l-0.406,2.629h-2.588v7.247C18.235,21.236,22,17.062,22,12C22,6.477,17.523,2,12,2z"></path>
-                </svg></a></div>
-            </div>
-           </div>
-           <div class="w-[30%] md:ml-28 mt-6 "><!-- second column -->
-            <p class="md:text-3xl md:mb-10 mb-6 font-semibold ">Company</p>
-            <div class="flex flex-col gap-2 font-light">
-            <p>About</p>
-            <p>How it works</p>
-            <p>Terms</p>
-            <p>Privacy Policy</p>
-            </div>
-            </div>
-            <div class="md:w-[30%] flex flex-col gap-4">
-                <div class="md:text-3xl md:mb-10 font-semibold">
-                    <p>Contact</p>
-                </div>
-                <p>Email:</p>
-               <div class="font-light gap-6 flex flex-col">
-                <p>Contact@newheightsrealestates.com</p>
-                <p class="hover:underline">Tel: +1 718 395 2262</p>
-                <p>633 W 207th St, New York, NY 10034,United States</p>
-                <p>Privacy Policy</p>
-               </div>
-            </div>
-        </div>
-        <div class="w-full flex justify-center">
-            <p>All Rights Reserved | New Heights Realty Group 2024</p>
-        </div>
-    </footer>
+        <footer class="h-auto  pt-10 pb-4 bg-black text-white flex flex-col w-full justify-center items-center">
+                    <div class=" w-[90%]   flex md:flex-row flex-col md:gap-10 mb-20 gap-8   items-start "><!-- conatiner -->
+                    <div class="md:w-[30%] flex-col">
+                    <div class="flex items-center ">
+                    <div class="h-20 w-20 "><!-- logo -->
+                        <img src="/img/NW-removebg-preview (1).png" alt="" class="w-full h-full invert">
+                    </div>
+                    <div>
+                        <p class="font-semibold">NEW WAGE</p>
+                    </div>
+                    </div>
+                    <div class="font-light w-full"><p>We’ve helped numerous individuals find their ideal Farm House. Now, we’re dedicated to providing even greater opportunities and insights. Whether you’re buying or selling, we’re here to support you every step of the way. </p></div>
+                    <div class="flex gap-2 md:mt-12 mt-6">
+                    <div class="md:w-[10%] w-[6%]"><a href=""><svg class="w-full h-full fill-current text-white" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"  viewBox="0 0 24 24">
+                        <path d="M 8 3 C 5.239 3 3 5.239 3 8 L 3 16 C 3 18.761 5.239 21 8 21 L 16 21 C 18.761 21 21 18.761 21 16 L 21 8 C 21 5.239 18.761 3 16 3 L 8 3 z M 18 5 C 18.552 5 19 5.448 19 6 C 19 6.552 18.552 7 18 7 C 17.448 7 17 6.552 17 6 C 17 5.448 17.448 5 18 5 z M 12 7 C 14.761 7 17 9.239 17 12 C 17 14.761 14.761 17 12 17 C 9.239 17 7 14.761 7 12 C 7 9.239 9.239 7 12 7 z M 12 9 A 3 3 0 0 0 9 12 A 3 3 0 0 0 12 15 A 3 3 0 0 0 15 12 A 3 3 0 0 0 12 9 z"></path>
+                    </svg></a></div>
+                    <div class="md:w-[10%] w-[6%]"><a href=""><svg class="w-full h-full fill-current text-white" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"  viewBox="0 0 24 24">
+                        <path d="M12,2C6.477,2,2,6.477,2,12c0,5.013,3.693,9.153,8.505,9.876V14.65H8.031v-2.629h2.474v-1.749 c0-2.896,1.411-4.167,3.818-4.167c1.153,0,1.762,0.085,2.051,0.124v2.294h-1.642c-1.022,0-1.379,0.969-1.379,2.061v1.437h2.995 l-0.406,2.629h-2.588v7.247C18.235,21.236,22,17.062,22,12C22,6.477,17.523,2,12,2z"></path>
+                    </svg></a></div>
+                    </div>
+                    </div>
+                    <div class="w-[30%] md:ml-28 mt-6 "><!-- second column -->
+                    <p class="md:text-3xl md:mb-10 mb-6 font-semibold ">Company</p>
+                    <div class="flex flex-col gap-2 font-light">
+                    <p>About</p>
+                    <p>How it works</p>
+                    <p>Terms</p>
+                    <p>Privacy Policy</p>
+                    </div>
+                    </div>
+                    <div class="md:w-[30%] flex flex-col gap-4">
+                    <div class="md:text-3xl md:mb-10 font-semibold">
+                        <p>Contact</p>
+                    </div>
+                    <p>Email:</p>
+                    <div class="font-light gap-6 flex flex-col">
+                    <p>Contact@newheightsrealestates.com</p>
+                    <p class="hover:underline">Tel: +1 718 395 2262</p>
+                    <p>633 W 207th St, New York, NY 10034,United States</p>
+                    <p>Privacy Policy</p>
+                    </div>
+                    </div>
+                    </div>
+                    <div class="w-full flex justify-center">
+                    <p>All Rights Reserved | New Heights Realty Group 2024</p>
+                    </div>
+        </footer>
 </body>
 <script src="https://smtpjs.com/v3/smtp.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
