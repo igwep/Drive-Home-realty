@@ -1,6 +1,6 @@
-import { burgerMenu } from "./app.js";
+/* import { burgerMenu } from "./app.js"; */
 
-/* const burgerMenu = ()=>{
+const burgerMenu = ()=>{
     const burger = document.querySelector('.burger-menu');
   console.log('burger')
   const mobileContainer = document.querySelector('.mobile-link-container');
@@ -19,7 +19,7 @@ import { burgerMenu } from "./app.js";
          
       
   })
-  } */
+  }
   burgerMenu();
 console.log('application');
 

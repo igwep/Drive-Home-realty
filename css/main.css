@@ -678,6 +678,10 @@ video {
   margin-bottom: 1rem;
 }
 
+.mb-0 {
+  margin-bottom: 0px;
+}
+
 .block {
   display: block;
 }
@@ -1213,6 +1217,10 @@ video {
     margin-top: 2rem;
   }
 
+  .md\:mb-6 {
+    margin-bottom: 1.5rem;
+  }
+
   .md\:h-72 {
     height: 18rem;
   }
@@ -1323,6 +1331,10 @@ video {
 
   .md\:p-4 {
     padding: 1rem;
+  }
+
+  .md\:p-12 {
+    padding: 3rem;
   }
 
   .md\:px-48 {
