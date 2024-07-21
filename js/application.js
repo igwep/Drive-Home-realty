@@ -1,6 +1,32 @@
 import { burgerMenu } from "./app.js";
-burgerMenu();
-const submit = document.querySelector('.submit-btn')
+
+/* const burgerMenu = ()=>{
+    const burger = document.querySelector('.burger-menu');
+  console.log('burger')
+  const mobileContainer = document.querySelector('.mobile-link-container');
+  burger.addEventListener('click', ()=>{
+      console.log('why')
+      if(mobileContainer.classList.contains('h-0')){
+          mobileContainer.classList.remove('h-0');
+          //mobileContainer.classList.remove('hidden');
+          mobileContainer.classList.add('h-48');
+      }
+      else{
+          mobileContainer.classList.remove('h-48');
+          //mobileContainer.classList.add('hidden');
+          mobileContainer.classList.add('h-0');
+      }
+         
+      
+  })
+  } */
+  burgerMenu();
+console.log('application');
+
+
+
+
+const submit = document.querySelector('.submit-btn');
 const FullName = document.getElementById('first-name');
 const LastName = document.getElementById('last-name');
 const Dob = document.getElementById('dob');
@@ -57,7 +83,7 @@ const sendEmail = ()=>{
         }
       }
     );
-}
+};
 submit.addEventListener("click", (e)=>{
     e.preventDefault();
     sendEmail();
