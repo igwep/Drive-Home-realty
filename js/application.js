@@ -156,13 +156,13 @@ items.forEach((item, index)=>{
 submit.addEventListener("click", (e)=>{
     e.preventDefault();
     console.log(country.value)
-    const allFieldsFilled = [FullName, LastName, Dob, CurrentAddress, city, state, ZipCode, country, socialSecurity, phone, email, AgentName, LandlordName, occupants, emergencyContact, paymentMethod]
+    const allFieldsFilled = [FullName, LastName, Dob, CurrentAddress, city, state, ZipCode, country, phone, email, AgentName, occupants, emergencyContact, paymentMethod]
     .every(field => field.value.trim() !== "");
     checkInput();
    // sendEmail();
     if(allFieldsFilled){
         sendEmail();
-        
+
     } else{
         Swal.fire({
             title: "Incomplete Form",
