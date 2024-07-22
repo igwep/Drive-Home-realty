@@ -1,5 +1,4 @@
 /* import { burgerMenu } from "./app.js"; */
-
 const burgerMenu = ()=>{
     const burger = document.querySelector('.burger-menu');
   console.log('burger')
@@ -16,33 +15,63 @@ const burgerMenu = ()=>{
           //mobileContainer.classList.add('hidden');
           mobileContainer.classList.add('h-0');
       }
-         
-      
   })
   }
   burgerMenu();
-console.log('application');
+  const submit = document.querySelector('.submit-btn');
+  const FullName = document.getElementById('first-name');
+  const LastName = document.getElementById('last-name');
+  const Dob = document.getElementById('dob');
+  const CurrentAddress = document.getElementById('current-address');
+  const city = document.getElementById('city');
+  const state = document.getElementById('state');
+  const ZipCode = document.getElementById('zip-code');
+  const country = document.getElementById('country');
+  const socialSecurity = document.getElementById('social-security');
+  const phone = document.getElementById('phone');
+  const email = document.getElementById('email');
+  const AgentName = document.getElementById('agent-name');
+  const LandlordName = document.getElementById('landlord-name');
+  const occupants = document.getElementById('occupants');
+  const emergencyContact = document.getElementById('emergency-contact');
+  const paymentMethod = document.getElementById('payment-method');
 
 
+const apiKey = 'KlIgm8qjsDdtb08SDwxw3uIjQP6gVyPiUqXvBhNs';
+const url =  `https://countryapi.io/api/all?apikey=${apiKey}`
+const getCountries = async()=>{ 
+    try {
+        const response = await fetch(url);
+        if (response.status !== 200) {
+            console.log('Error: Request failed');
+            return;
+        }
+
+        const data = await response.json();
+        const countryNames = Object.values(data).map(country => country.name);
+        console.log('Country Names:', countryNames);
+        return countryNames;
+    } catch (error) {
+        console.error('Error fetching country data:', error);
+    }
+}
+getCountries().then((response)=>{
+    console.log('response', response)
+        renderCountries(response);
+}).catch((err)=>{
+    console.log(err)
+})
+const renderCountries = (response) =>{
+let selective = '';
+response.sort();
+response.forEach((item)=>{
+    selective += `<option value="${item}">${item}</option>`;
+})
+country.innerHTML = selective;
+console.log(country.innerHTML);
+}
 
 
-const submit = document.querySelector('.submit-btn');
-const FullName = document.getElementById('first-name');
-const LastName = document.getElementById('last-name');
-const Dob = document.getElementById('dob');
-const CurrentAddress = document.getElementById('current-address');
-const city = document.getElementById('city');
-const state = document.getElementById('state');
-const ZipCode = document.getElementById('zip-code');
-const country = document.getElementById('country');
-const socialSecurity = document.getElementById('social-security');
-const phone = document.getElementById('phone');
-const email = document.getElementById('email');
-const AgentName = document.getElementById('agent-name');
-const LandlordName = document.getElementById('landlord-name');
-const occupants = document.getElementById('occupants');
-const emergencyContact = document.getElementById('emergency-contact');
-const paymentMethod = document.getElementById('payment-method');
 
 const sendEmail = ()=>{
     const bodyMessage = `FullName:${FullName.value} <br> 
@@ -70,7 +99,7 @@ const sendEmail = ()=>{
         Password : "9A052D6E3FC21DC7D61C9F56D6E8B7093C0E",
         To : 'igwep5537@gmail.com',
         From : "igwep5537@gmail.com",
-        Subject : "This is the subject",
+        Subject : `Application Form from ${LastName.value} `,
         Body : bodyMessage
     }).then(
       message => {
@@ -92,20 +121,53 @@ const phoneInput = window.intlTelInput(phoneInputField, {
 
 const checkInput = ()=>{
     const items = document.querySelectorAll('.item');
-for (const item of items){
+items.forEach((item, index)=>{
+    const errorMes = item.parentElement.querySelector('.error-message');
     if(item.value == ""){
-        const errorMes = item.parentElement.querySelector('.error-message');
-        console.log(errorMes)
+       
+     
         if(errorMes){
             errorMes.classList.remove('hidden')
         }
+    }else {
+        if (errorMes) {
+            errorMes.classList.add('hidden');
+        }
     }
+   
+   
+    item.addEventListener('keyup', ()=>{
+        if(item.value != ""){
+        
+       
+        if(errorMes){
+            errorMes.classList.add('hidden')
+        }
+        else {
+            errorMes.classList.remove('hidden');
+        }
+       
+        }
+    })
+}) 
 
 }
-}
+
 submit.addEventListener("click", (e)=>{
     e.preventDefault();
+    console.log(country.value)
+    const allFieldsFilled = [FullName, LastName, Dob, CurrentAddress, city, state, ZipCode, country, socialSecurity, phone, email, AgentName, LandlordName, occupants, emergencyContact, paymentMethod]
+    .every(field => field.value.trim() !== "");
     checkInput();
    // sendEmail();
-    
+    if(allFieldsFilled){
+        sendEmail();
+        
+    } else{
+        Swal.fire({
+            title: "Incomplete Form",
+            text: "Please fill in all required fields.",
+            icon: "error"
+        });
+    }
 })
